@@ -1,14 +1,28 @@
 #include<stdio.h>
-int main(){
-char name[32];
-printf("Enter your name:\n");
-scanf("%s",name);
-int i=0; counter=0;
-while(name[i]!='\0')
+int main()
 {
-counter++;
-i++;
+int a[3][3], row,col,sum=0, average;
+printf("Enter the 9 values:\n");
+for(row=0; row<3; row++)
+{
+for(col=0; col<3; col++)
+{
+scanf("%d, &a[row][col]);
 }
-printf("Length of character is:",counter);
+}
+for(row=0; row<3; row++)
+{
+for(col=0; col<3; col++)
+{
+printf("%d, a[row][col]);
+sum= sum+ a[row][col];
+}
+printf("\n");
+
+}
+float average= sum/9;
+printf("Average is: %.3f", average);
+
+
 return 0;
 }

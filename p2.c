@@ -1,17 +1,14 @@
 #include<stdio.h>
-void even_or_odd(int x){
-if(x%2==0)
+int main(){
+char name[32];
+printf("Enter your name:\n");
+scanf("%s",name);
+int i=0, counter=0;
+while(name[i]!='\0')
 {
-    printf("EVEN\n");
+counter++;
+i++;
 }
-
-else{
-    printf("ODD\n");
-}
-}
-int main()
-{
-    even_or_odd(19);
-
+printf("Length of name is:%d\n",counter);
 return 0;
 }

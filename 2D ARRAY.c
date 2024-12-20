@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
+  
 int a[3][3], row,col,sum=0;
 printf("Enter the 9 values:\n");
 for(row=0; row<3; row++)
